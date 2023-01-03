@@ -79,7 +79,7 @@ System.out.println("value : "+rs.getString("title")); */
 	
 </table>
 <a href="noticeEdit.do?c=${n.seq }">수정</a>
-<a href="noticeDelProc.jsp?c=${n.seq }">삭제</a>
+<a href="noticeDelProc.do?c=${n.seq }">삭제</a>
 <a href="notice.do">목록</a>
 </body>
 </html>

@@ -5,7 +5,7 @@
     pageEncoding="UTF-8"%>
 
 <%
-request.setCharacterEncoding("utf-8");
+/* request.setCharacterEncoding("utf-8");
 
 String num=request.getParameter("c");
 
@@ -14,7 +14,7 @@ n.setSeq(num);
 
 NoticeDao dao=new NoticeDao();
 //int cnt=dao.delete(n);
-int cnt=dao.delete(num);
+int cnt=dao.delete(num); */
 
 /* //전달된 파람을 받아서 데이터베이스의 해당글을 삭제
 String driver="oracle.jdbc.driver.OracleDriver";
@@ -35,10 +35,10 @@ PreparedStatement pstmt=conn.prepareStatement(sql);
 pstmt.setString(1, num);
 
 int cnt=pstmt.executeUpdate(); */
-if(cnt>0){
+/* if(cnt>0){
 	System.out.print("삭제성공");
 	response.sendRedirect("notice.jsp");
-}
+} */
 
 %>
 
