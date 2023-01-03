@@ -1,0 +1,13 @@
+테이블을 변경 미션
+mvc1 변형
+
+web.xml 변경
+  <!-- servlet setting -->
+  <servlet>
+  	<servlet-name>dispatcher</servlet-name>
+  	<servlet-class>notice.controller.MyDispatcher</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>dispatcher</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
